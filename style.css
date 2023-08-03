@@ -54,6 +54,7 @@ body{
 }
 
 .banner{
+    background: #FFF;
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -328,4 +329,60 @@ footer{
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 80px;
+}
+
+
+@media screen and (max-width:576px){
+    .navbar, .banner, main, .overlap{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbar, .navbar-right>ul, .banner, .body-imgs, .overlap{
+        flex-direction: column;
+        text-align: center;
+    }
+    header{
+        text-align: center;
+    }
+    .navbar-right>ul>li{
+        padding-bottom: 30px;
+        text-align: center;
+        padding-right: 0;
+    }
+    .navbar-right>ul{
+        padding-left: 0;
+    }
+    .banner-image{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .banner-image img{
+        padding-left: 0;
+    }
+    main{
+        padding-top: 20px;
+    }
+    #body-heading, #heading-color{
+        display: inline;
+        font-size: 25px;
+        text-align: center;
+    }
+    #body-text{
+        font-size: 15px;
+    }
+    .overlap-imgs{
+        padding: 0;
+    }
+    .overlap-imgs img{
+        width: 70%;
+    }
+    .inner img{
+        transform: scale(0.5,0.5) translateX(-220px) translateY(-380px);
+    }
+    .hide{
+        display: none;
+    }
+    .all-btn{
+        display: none;
+    }
 }
